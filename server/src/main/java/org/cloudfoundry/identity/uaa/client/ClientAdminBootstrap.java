@@ -88,6 +88,8 @@ public class ClientAdminBootstrap implements
         this.autoApproveClients = new HashSet<>(ofNullable(autoApproveClients).orElse(Collections.emptySet()));
         this.clientsToDelete = new HashSet<>(ofNullable(clientsToDelete).orElse(Collections.emptySet()));
         this.jdbcTemplate = jdbcTemplate;
+
+        logger.info("BRUCE auto approve clients: " + Arrays.toString(autoApproveClients.toArray()));
     }
 
     @Override
