@@ -201,6 +201,7 @@
                     </entry>
                 </map>
             </constructor-arg>
+            <constructor-arg name="autoApproveClients"  value="#{ 'cf' }" />
         </bean>
     </beans>
 </beans>
